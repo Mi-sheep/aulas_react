@@ -1,0 +1,27 @@
+.menu_logo {
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+.opcoes {
+    border: 1px solid #ccc;
+    width: 10rem;
+    padding-block: 1rem;
+
+    translate: -100%;
+}
+
+.opcoes nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.opcoes.open {
+    translate: 0;
+}
