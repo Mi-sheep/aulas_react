@@ -1,3 +1,20 @@
+.desktop {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #aaa;
+}
+
+.desktop_options {
+    display: flex;
+    gap: 2rem;
+}
+
+.mobile {
+    position: relative;
+}
+
 .menu_logo {
     border: 1px solid #aaa;
     display: flex;
@@ -5,6 +22,7 @@
     height: 4rem;
     align-items: center;
     padding-inline: 1rem;
+    margin-bottom: 1rem;
 }
 
 .options {
@@ -12,6 +30,9 @@
     width: 10rem;
     padding-block: 1rem;
 
+    background-color: white;
+    top: 4.525rem;
+    position: absolute;
     translate: -100%;
     transition: translate .3s;
 }
@@ -25,4 +46,14 @@
 
 .options.open {
     translate: 0;
+}
+
+@media (min-width: 800px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+    }
 }
